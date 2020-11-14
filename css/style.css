@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700&display=swap");
+body {
+  font-family: "Raleway", sans-serif;
+  color: #636e72;
+}
+
+/*bloco central*/
+.container {
+  width: 70%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  float: none;
+  display: block;
+}
+
+/*GRID*/
+.col-1 {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.col-2 {
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+  float: left;
+}
+.col-3 {
+  width: 33, 33333333333333%;
+  height: auto;
+  overflow: hidden;
+  float: left;
+}
+.col-4 {
+  width: 25%;
+  height: auto;
+  overflow: hidden;
+  float: left;
+}
+.col-5 {
+  width: 20%;
+  height: auto;
+  overflow: hidden;
+  float: left;
+}
+
+/*RESPONSIVE*/
+
+.desktop-mobile {
+  width: 100%;
+  display: none;
+}
+.show-menu {
+  background-color: #ccc;
+  padding: 10px 15px 10px 15px;
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  margin: 15px;
+}
+
+@media only screen and (max-width: 640px) {
+  .container {
+    width: 84%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    float: none;
+    display: block;
+  }
+  .col-2 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  .desktop-nav {
+    display: none;
+  }
+  .desktop-mobile {
+    width: 100%;
+    display: block;
+  }
+}
+
+/*PADDING*/
+.pading-top-20 {
+  padding-top: 20px;
+}
+.pading-bottom-20 {
+  padding-bottom: 20px;
+}
+.padding-25 {
+  padding: 25%;
+}
+.padding-50 {
+  padding: 50%;
+}
+
+/*MARGIN*/
+.margin-top-20 {
+  margin-top: 20px;
+}
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+.margin-bottom-10{
+  margin-bottom: 10px;
+}
+.margin-top-40 {
+  margin-top: 40px;
+}
+
+/*IMAGE*/
+.img-responsiva {
+  width: 100%;
+  height: auto;
+}
+/*UTEIS*/
+.centro{float: none; margin:0 auto;display:block;}
+.text-center {
+  text-align: center;
+}
+.strong {
+  color: #444;
+  font-weight: bold;
+}
+.h1{font-size: 26px; font-weight: 700;}
+.h3{font-size: 18px; font-weight: bold; color:#333;}
+.span{font-size: 12px;}
+
+#topo {
+  background-color: #ffffff;
+  border-bottom: solid 1px #ddd;
+  padding: 10px;
+  box-shadow: 0 0 5px #777;
+}
+#topo h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 26px;
+  padding-top: 10px;
+}
+#topo nav {
+  width: 30%;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+}
+#topo nav ul li {
+  list-style: none;
+  float: left;
+  margin: 10px;
+}
+#topo nav ul li a {
+  text-decoration: none;
+  color: #555;
+  text-transform: capitalize;
+}
+#topo nav ul li a:hover {
+  color: #d63031;
+}
+
+#conteudo {
+  margin-top: 1px;
+}
+#conteudo h2 {
+  margin: 15px;
+}
+#conteudo p {
+  margin: 15px;
+  line-height: 150%;
+}
+
+#conteudo .lista-desordenada {
+  padding: 8%;
+}
+#conteudo ul li {
+  list-style: decimal;
+  margin-bottom: 10px;
+}
+#conteudo ul li span {
+  color: orange;
+  border-right: solid 1px #999;
+  padding-right: 4px;
+}
+
+#conteudo .banner img{
+  width:100%;
+  height:400px;
+  object-fit: cover;
+
+}
+
+#rodape {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 15px;
+  background-color: #ddd;
+}
+#rodape p {
+  text-align: center;
+}
